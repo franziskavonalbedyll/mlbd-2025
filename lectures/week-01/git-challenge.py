@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from statistics import mean
 import pandas as pd
 
 def person_a():
@@ -23,9 +24,9 @@ def person_b(df):
     Returns:
     dataframe: Data from the female students
     """
-    # Code goes over here.
+    data = pd.read_csv("data/school_performance.csv")
 
-    raise NotImplementedError()
+    return data.head(5000)
 
 def person_c(df):
     """Calculates the mean from the column "grade"
@@ -36,9 +37,8 @@ def person_c(df):
     Returns:
     float: Mean grade
     """
-    # Code goes over here.
 
-    raise NotImplementedError()
+    return df["grade"].mean()
 
 def main():
     """ Main program """

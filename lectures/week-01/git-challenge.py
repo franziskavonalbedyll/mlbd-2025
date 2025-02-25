@@ -28,6 +28,7 @@ def person_b(df):
 
     return data.head(5000)
 
+
 def person_c(df):
     """Calculates the mean from the column "grade"
 
